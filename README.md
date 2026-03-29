@@ -50,4 +50,11 @@ To replace navigation sensors (Speed Logs and Echo Sounders) while a ship is afl
 Whether it is a Python script or a 300-meter tanker, **efficiency is hidden in the details.** My background in commercial diving taught me that "good enough" doesn't exist when you are 20 meters down—precision is the only safety margin.
 
 ---
+
 *This record is a personal technical study and is not affiliated with any specific diving company or vessel.*
+
+---
+
+### How to Run:
+```bash
+
