@@ -47,7 +47,7 @@ In subsea engineering, "Clearance" is the tiny boundary between safe operation a
 ## 🤝 4. Pressure Management: The "Underwater Handshake"
 To replace navigation sensors (Speed Logs and Echo Sounders) while a ship is afloat, you have to temporarily "plug the ocean."
 
-* **The Seal:** We used **Cofferdams** (steel boxes with rubber gaskets) or specialized **Bungs** coated in **Tallow** to create a watertight seal over the sensor housing.
+* **The Seal:** We used **Cofferdams** (steel boxes with rubber gaskets) or specialized **soft wood plugs** coated in **plastercine** to create a watertight seal over the sensor housing.
 * **The Communication:** A strict **"1-2-3" Hull Knocking** protocol. Once the internal engineer confirms the area is dry and the suction is holding, the repair begins.
 * **The Release:** After installation, the internal housing is flooded to **equalize pressure**, allowing the diver to safely detach the equipment.
 
