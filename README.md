@@ -57,4 +57,5 @@ Whether it is a Python script or a 300-meter tanker, **efficiency is hidden in t
 
 ### How to Run:
 ```bash
+ship_husbandry_logic.py
 
