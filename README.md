@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # ⚓ Subsea Engineering & Ship Husbandry: A Technical Field Record
 > **A professional synthesis of first-hand commercial diving operations, mechanical precision, and underwater logic.**
 
