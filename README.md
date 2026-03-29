@@ -3,6 +3,13 @@
 # ⚓ Subsea Engineering & Ship Husbandry: A Technical Field Record
 > **A professional synthesis of first-hand commercial diving operations, mechanical precision, and underwater logic.**
 
+---
+
+![Subsea Engineering Header](ship.png)
+
+---
+
+
 This documentation captures the technical protocols and engineering insights developed during my time in the commercial diving industry. It focuses on the intersection of **mechanical efficiency**, **precision metrology**, and **underwater life-support safety.**
 
 ---
