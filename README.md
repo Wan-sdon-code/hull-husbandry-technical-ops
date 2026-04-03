@@ -62,7 +62,14 @@ Whether it is a Python script or a 300-meter tanker, **efficiency is hidden in t
 
 ---
 
-### How to Run:
-```bash
-ship_husbandry_logic.py
+### 🚀 How to Run the Analysis
+To see this logic run as a structured script, follow these steps:
+
+1. **Prerequisites:** Ensure you have [Python 3](https://www.python.org/downloads/) installed.
+2. **Download:** Save the `ship_husbandry_logic.py` file to your computer.
+3. **Execute:** Open your Terminal or Command Prompt and run:
+ 
+   ```bash
+   ship_husbandry_logic.py
+
 
