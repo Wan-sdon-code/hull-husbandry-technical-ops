@@ -44,4 +44,4 @@ In underwater work, "good enough" is not okay. Whether you are fixing a giant sh
 ## 🚀 Run the Code
 To see how this works in a computer script, run this file:
 
-`python ship_husbandry_logic.py`
+`ship_husbandry_logic.py`
