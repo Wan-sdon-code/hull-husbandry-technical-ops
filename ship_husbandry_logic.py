@@ -1,58 +1,41 @@
-# ---------------------------------------------------------
-# PROJECT: Ship Husbandry Maintenance & Analytics Logic
-# PURPOSE: Technical decision-making simulation for underwater 
-#          inspections and maritime logistics.
-# ---------------------------------------------------------
+# clean_ship_ops.py
+class SubseaMission:
+    def __init__(self):
+        self.loto_complete = False
+        self.hull_status = "Fouled"
+        self.prop_grade = "D"
+        self.efficiency = 80
 
-def check_hull_status(fouling_type: str) -> str:
-    """Simulates the decision to deploy a Brush Kart based on fouling."""
-    # Actionable categories for maintenance
-    heavy_fouling = ["Barnacles", "Heavy Slime", "Tubeworms"]
-    
-    if fouling_type in heavy_fouling:
-        return f"ACTION: Deploy Hydraulic Brush Kart. Priority: HIGH. (Type: {fouling_type})"
-    return "STATUS: Hull is within hydrodynamic tolerance. No cleaning required."
+    def safety_check(self):
+        print("Safety: Performing LOTO... Engines Locked.")
+        self.loto_complete = True
 
-def calculate_shaft_wear(current_poker: float, baseline: float) -> str:
-    """Logic for Poker Gauge measurement and wear-down analysis."""
-    # abs() handles potential reading order errors; round(x, 2) ensures clean data
-    wear_down = round(abs(current_poker - baseline), 2)
-    MAX_LIMIT = 2.0  # mm
-    
-    if wear_down >= MAX_LIMIT:
-        return f"ALERT: Wear is {wear_down}mm. CRITICAL (Exceeds {MAX_LIMIT}mm limit). Schedule replacement."
-    return f"STATUS: Wear is {wear_down}mm. Shaft alignment is STABLE."
+    def run_brush_kart(self):
+        if not self.loto_complete:
+            print("Error: Safety LOTO not complete!")
+            return
+        
+        print("Operation: Running Brush Kart...")
+        self.hull_status = "Clean"
+        print("Hull is now clean.")
 
-def verify_sensor_seal(knocks_heard: int) -> str:
-    """Simulates the 'handshake' protocol for sensor replacement."""
-    signals = {
-        2: "COMMUNICATION: Handshake confirmed (2 Knocks). Area is dry. Begin swap.",
-        3: "COMMUNICATION: ABORT (3 Knocks). Seal compromised or Engine Room intervention."
-    }
-    return signals.get(knocks_heard, "STATUS: Waiting for acoustic signal from Engine Room...")
+    def polish_propeller(self):
+        print("Operation: Polishing Propeller...")
+        # Move from Grade D to Grade A
+        for grade in ["C", "B", "A"]:
+            self.prop_grade = grade
+            print("Surface Grade now: " + self.prop_grade)
 
-# --- SIMULATION OF A TECHNICAL INSPECTION ---
+    def show_report(self):
+        print("--- FINAL REPORT ---")
+        print("Hull: " + self.hull_status)
+        print("Propeller Grade: " + self.prop_grade)
+        if self.prop_grade == "A" and self.hull_status == "Clean":
+            print("Vessel Efficiency: 100%")
 
-def run_inspection_report():
-    print("="*40)
-    print("   MARITIME TECHNICAL INSPECTION LOG   ")
-    print("="*40)
-
-    # 1. Hull Observation
-    print(f"\n[1/3] HULL INSPECTION:")
-    print(check_hull_status("Barnacles"))
-
-    # 2. Poker Gauge Reading (Simulation: 12.5mm vs 10.8mm)
-    print(f"\n[2/3] SHAFT WEAR ANALYSIS:")
-    print(calculate_shaft_wear(12.5, 10.8))
-
-    # 3. Sensor Replacement (Received 2 knocks)
-    print(f"\n[3/3] SENSOR SWAP PROTOCOL:")
-    print(verify_sensor_seal(2))
-
-    print("\n" + "="*40)
-    print("        INSPECTION COMPLETED          ")
-    print("="*40)
-
-if __name__ == "__main__":
-    run_inspection_report()
+# Run it
+mission = SubseaMission()
+mission.safety_check()
+mission.run_brush_kart()
+mission.polish_propeller()
+mission.show_report()
