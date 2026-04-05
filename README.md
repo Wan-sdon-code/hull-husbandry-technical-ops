@@ -1,47 +1,48 @@
-# ⚓ Subsea Engineering & Ship Husbandry
+# ⚓ Project: Subsea Engineering (v2.1)
 
-> **Objective:** Lessons learned from underwater ship repair and precision engineering.
-
----
+> **The Logic:** A ship is "Floating Hardware." Small errors underwater = System Crash.
 
 ![Ship](./ship.png)
 
-## 🛠️ Tools & Skills
-* **Machines:** Underwater cleaning karts and high-speed polishers.
-* **Measuring:** Tools that measure gaps as thin as a human hair.
-* **Safety:** Strict rules for turning off engines and talking to the surface.
+---
+
+## 🕹️ The 6-Step System Check
+
+| Step | Item | Logic |
+| :--- | :--- | :--- |
+| **00** | **CCTV** | **The Scan:** Cameras find damage before we start. |
+| **01** | **Brush Kart** | **The Clean:** Vacuum-stuck scrubber. Saves 20% fuel. |
+| **02** | **Scraper** | **The Detail:** Hand tool for rudders and seachests. |
+| **03** | **Polisher** | **The Smooth:** Mirror finish stops metal damage. |
+| **04** | **Gauges** | **The Audit:** Poker/Feeler gauges measure to 0.05mm. |
+| **05** | **Plugs** | **The Patch:** Swap sensors without sinking. |
 
 ---
 
-## 🌊 Main Operations
+## 🛠️ The "Plugging" Process (Hot-Swap)
 
-### 1. Cleaning the Bottom (Hull)
-* **The Problem:** Sea growth like barnacles and grass slows the ship down. This makes the ship use **20% more fuel**.
-* **The Solution:** We use a **Brush Kart**. It is an underwater machine that sticks to the ship like a vacuum to scrub it clean.
-
-### 2. Making the Propeller Smooth
-* **The Goal:** We polish the propeller until it is as smooth as a mirror (**Grade A**).
-* **The Reason:** If it is rough, it creates tiny bubbles that pop and damage the metal. This is called **"Cavitation."**
-* **The Result:** A smooth propeller saves fuel and makes the ship move better.
-
-### 3. Safety & Measuring
-* **Turning things off (LOTO):** We make sure all pumps and engines are locked. This stops the diver from being sucked into the ship.
-* **The Knocking Code:** We use a **"1-2-3" knocking** system on the side of the ship to talk to the engineers inside.
-* **Exact Measuring:** We use **Feeler Gauges** to check for wear and tear. We measure gaps as small as **0.05mm** to make sure parts are safe.
-
-### 4. Swapping Sensors: "Plugging the Ship"
-* **The Job:** We change speed and depth sensors while the ship is still in the water.
-* **The Seal:** We use waterproof boxes or wood plugs to **"plug the ship"** so water doesn't get inside.
-* **The Finish:** Once the new part is in, we slowly let water back in to balance the pressure before the diver leaves.
+1. **Seal:** Diver puts a **Plug** over the hole from the outside.
+2. **Knock:** Diver knocks **1-2-3** to signal: *"Safe to open!"*
+3. **Update:** Crew inside swaps the part.
+4. **Reboot:** Balance pressure and remove the plug.
 
 ---
 
-## 💡 The Engineering Perspective
-In underwater work, "good enough" is not okay. Whether it is a giant ship or a Python script, being **exact** is the only way to stay safe.
+## 📜 Safety Code
+
+* **LOTO:** Lock engines. If they start, the diver is gone.
+* **Line Tugging:** Tug the rope if the radio breaks.
+* **The Poker:** Real numbers only. No guesses.
 
 ---
 
-## 🚀 The Logic
-To see how this logic works in a computer script, view the file here:
+## 💡 Conclusion
 
-**[ship_husbandry_logic.py](./ship_husbandry_logic.py)**
+1. **Exact Inputs:** Use gauges. Precision is safety.
+2. **Clean Logic:** A clean hull is fast. A dirty hull is "Spaghetti Code."
+
+> **System Check:** No "Undo" button in the ocean. Do it right first.
+
+---
+
+**[ END SCRIPT ]**
