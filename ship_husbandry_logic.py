@@ -1,41 +1,58 @@
-# clean_ship_ops.py
-class SubseaMission:
-    def __init__(self):
-        self.loto_complete = False
-        self.hull_status = "Fouled"
-        self.prop_grade = "D"
-        self.efficiency = 80
+# ⚓ Project: Subsea Engineering (v2.2)
 
-    def safety_check(self):
-        print("Safety: Performing LOTO... Engines Locked.")
-        self.loto_complete = True
+def run_subsea_script():
+    # We use a multi-line string to keep the formatting exactly like your README.
+    logic_display = """
+⚓ Project: Subsea Engineering (v2.2)
+==================================================
+The Logic: A ship is "Floating Hardware." 
+Small errors underwater = System Crash.
+==================================================
 
-    def run_brush_kart(self):
-        if not self.loto_complete:
-            print("Error: Safety LOTO not complete!")
-            return
-        
-        print("Operation: Running Brush Kart...")
-        self.hull_status = "Clean"
-        print("Hull is now clean.")
+🕹️ THE 6-STEP SYSTEM CHECK:
 
-    def polish_propeller(self):
-        print("Operation: Polishing Propeller...")
-        # Move from Grade D to Grade A
-        for grade in ["C", "B", "A"]:
-            self.prop_grade = grade
-            print("Surface Grade now: " + self.prop_grade)
+[00] CCTV        : The Scan. Cameras find damage before we start.
+[01] Brush Kart  : The Clean. Vacuum-stuck scrubber. Saves 20% fuel.
+[02] Scraper     : The Detail. Hand tool for rudders and seachests.
+[03] Polisher    : The Smooth. Mirror finish stops metal damage.
+[04] Gauges      : The Audit. Poker/Feeler gauges measure to 0.05mm.
+[05] Plugs       : The Patch. Swap sensors without sinking.
 
-    def show_report(self):
-        print("--- FINAL REPORT ---")
-        print("Hull: " + self.hull_status)
-        print("Propeller Grade: " + self.prop_grade)
-        if self.prop_grade == "A" and self.hull_status == "Clean":
-            print("Vessel Efficiency: 100%")
+--------------------------------------------------
+🛠️ THE "PLUGGING" PROCESS (HOT-SWAP):
 
-# Run it
-mission = SubseaMission()
-mission.safety_check()
-mission.run_brush_kart()
-mission.polish_propeller()
-mission.show_report()
+1. SEAL   : Diver puts a Plug over the hole from outside.
+2. KNOCK  : Diver knocks 1-2-3 to signal: "Safe to open!"
+3. UPDATE : Crew inside swaps the part.
+4. REBOOT : Balance pressure and remove the plug.
+
+--------------------------------------------------
+📜 SAFETY CODE:
+
+* LOTO         : Lock engines. If they start, the diver is gone.
+* LINE TUGGING : Tug the rope if the radio breaks.
+* THE POKER    : Real numbers only. No guesses.
+
+--------------------------------------------------
+💡 CONCLUSION:
+
+1. EXACT INPUTS : Use gauges. Precision is safety.
+2. CLEAN LOGIC  : A clean hull is fast. Dirty hull = "Spaghetti Code."
+
+> SYSTEM CHECK: No "Undo" button in the ocean. Do it right first.
+
+--------------------------------------------------
+⚠️ DISCLAIMER:
+This document is for educational/research purposes. 
+Subsea operations are high-risk. Always follow 
+official Class Society rules and safety manuals.
+
+✍️ CREDITS:
+* Research & Logic: [WANSAIDON]
+* Structure: Gemini AI
+==================================================
+"""
+    print(logic_display)
+
+if __name__ == "__main__":
+    run_subsea_script()
