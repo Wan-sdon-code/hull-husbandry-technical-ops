@@ -10,7 +10,7 @@
 
 | Step | Item | Logic |
 | :--- | :--- | :--- |
-| **00** | **CCTV** | **The Scan:** Cameras find damage before we start. |
+| **00** | **CCTV** | **The Scan:** Cameras find fouling/damage before/after we start. |
 | **01** | **Brush Kart** | **The Clean:** Vacuum-stuck scrubber. Saves 20% fuel. |
 | **02** | **Scraper** | **The Detail:** Hand tool for rudders and seachests. |
 | **03** | **Polisher** | **The Smooth:** Mirror finish stops metal damage. |
