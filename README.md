@@ -1,4 +1,4 @@
-# ⚓ Project: Subsea Engineering (v2.1)
+# ⚓ Project: Subsea Engineering (v2.2)
 
 > **The Logic:** A ship is "Floating Hardware." Small errors underwater = System Crash.
 
@@ -42,6 +42,15 @@
 2. **Clean Logic:** A clean hull is fast. A dirty hull is "Spaghetti Code."
 
 > **System Check:** No "Undo" button in the ocean. Do it right first.
+
+---
+
+### ⚠️ Disclaimer
+This document is for educational and research purposes only. Subsea operations are high-risk. Always follow official Class Society (ABS/DNV) rules and company-specific safety manuals. Incorrect use of these steps can lead to hardware failure or loss of life.
+
+### ✍️ Credits
+* **Research & Logic:** [Wansaidon]
+* **Structure & Drafting:** Gemini AI
 
 ---
 
