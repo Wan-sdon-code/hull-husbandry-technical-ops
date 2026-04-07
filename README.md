@@ -61,6 +61,6 @@ This document is for educational and research purposes only. Subsea operations a
 
 ---
 
-**[ SOURCE CODE ]** 🔗 `ship_husbandry_logic.py`
+**[ SOURCE CODE ]** 🔗 [ship_husbandry_logic.py](./ship_husbandry_logic.py)
 
 **[ END SCRIPT ]**
