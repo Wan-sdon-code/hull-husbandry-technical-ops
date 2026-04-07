@@ -1,47 +1,54 @@
-# ⚓ Project: Subsea Engineering (v2.2)
+# ⚓ Project: Underwater Ship Hull Cleaning Operation
 
-> **The Logic:** A ship is "Floating Hardware." Small errors underwater = System Crash.
-
-![Ship](./ship.png)
+> **The Logic:** A ship is "Floating Hardware." Cleaning the bottom keeps it from slowing down, crashing, or breaking.
 
 ---
 
-## 🕹️ The 6-Step System Check
+## 📜 Safety Code (The "Pre-Flight" Check)
+
+* **LOTO (Pre-Op):** **Lock Out, Tag Out.** This is Step Zero. Engines and thrusters must be physically locked and tagged "DO NOT START." If the hardware starts, the diver is gone.
+* **Diver Flag:** The **Alpha Flag** (Blue & White) must be hoisted to tell other ships to stay away and slow down.
+
+---
+
+## 🕹️ The 5-Step Cleaning System (Performance)
 
 | Step | Item | Logic |
 | :--- | :--- | :--- |
-| **00** | **CCTV** | **The Scan:** Cameras find fouling/damage before/after we start. |
-| **01** | **Brush Kart** | **The Clean:** Vacuum-stuck scrubber. Saves 20% fuel. |
-| **02** | **Scraper** | **The Detail:** Hand tool for rudders and seachests. |
-| **03** | **Polisher** | **The Smooth:** Mirror finish stops metal damage. |
-| **04** | **Gauges** | **The Audit:** Poker/Feeler gauges measure to 0.05mm. |
-| **05** | **Plugs** | **The Patch:** Swap sensors without sinking. |
+| **01** | **CCTV (Pre)** | **The Scan:** Cameras find the marine fouling before starting. |
+| **02** | **Brush Kart** | **The Clean:** A vacuum spinning scrubber kart that sticks to the ship to remove barnacles and slime. |
+| **03** | **Scraper** | **The Detail:** Hand tools for tight spots the kart can't reach. |
+| **04** | **Polisher** | **The Smooth:** Buffs propeller blades like a mirror to save 20% fuel. |
+| **05** | **CCTV (Post)** | **The Audit:** Final video scan to prove the hull is clean and smooth. |
 
 ---
 
-## 🛠️ The "Plugging" Process (Hot-Swap)
+## 🛠️ Extra Jobs: Hardware & Repair (Maintenance)
 
-1. **Seal:** Diver puts a **Plug** over the hole from the outside.
-2. **Knock:** Diver knocks **1-2-3** to signal: *"Safe to open!"*
-3. **Update:** Crew inside swaps the part.
-4. **Reboot:** Balance pressure and remove the plug.
+### 1. The Audit (Gauges)
+* **Gap Check:** Using tiny metal rulers (Gauges) to make sure parts haven't worn down or shifted.
+
+### 2. The Patch (Plugs)
+* **Hot-Swap:** Plugging a hole from the outside so a part can be replaced inside without the ship sinking.
+
+### 3. The Dry Zone (Cofferdam)
+* **Water-Shield:** Fitting a big waterproof box to the hull to create a dry space for underwater welding.
 
 ---
 
-## 📜 Safety Code
+## ⚓ The "Hot-Swap" Logic (Plugs & Cofferdams)
 
-* **LOTO:** Lock engines. If they start, the diver is gone.
-* **Line Tugging:** Tug the rope if the radio breaks.
-* **The Poker:** Real numbers only. No guesses.
+1. **Seal:** Diver fits the **Plug** or **Box** over the work area.
+2. **Drain:** Pump out the water to create a safe, dry seal.
+3. **Signal:** Diver knocks **1-2-3** to tell the crew: *"Safe to open!"*
+4. **Repair:** Fix the hardware while the ship stays in the water.
 
 ---
 
 ## 💡 Conclusion
 
-1. **Exact Inputs:** Use gauges. Precision is safety.
-2. **Clean Logic:** A clean hull is fast. A dirty hull is "Spaghetti Code."
-
-> **System Check:** No "Undo" button in the ocean. Do it right first.
+1. **Smooth is Fast:** A clean hull removes the "bugs" and "lag" from the ship's performance.
+2. **Safety is Binary:** There is no "Undo" button underwater. Either the LOTO is on and the flag is up, or the operation is a hard fail.
 
 ---
 
@@ -54,6 +61,6 @@ This document is for educational and research purposes only. Subsea operations a
 
 ---
 
-**[ SOURCE CODE ]** 🔗 [ship_husbandry_logic.py](./ship_husbandry_logic.py)
+**[ SOURCE CODE ]** 🔗 `ship_husbandry_logic.py`
 
 **[ END SCRIPT ]**
