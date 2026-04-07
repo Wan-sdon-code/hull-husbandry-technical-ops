@@ -1,4 +1,4 @@
-# ⚓ Project: Underwater Ship Hull Cleaning Operation
+# ⚓ Project: Ship Hull Underwater Cleaning Operation
 
 > **The Logic:** A ship is "Floating Hardware." Cleaning the bottom keeps it from slowing down, crashing, or breaking.
 
