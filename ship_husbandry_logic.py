@@ -1,58 +1,88 @@
-# ⚓ Project: Subsea Engineering (v2.2)
+# ship_husbandry_logic.py
+# Research & Logic: [Wansaidon]
+# Structure & Drafting: Gemini AI
 
-def run_subsea_script():
-    # We use a multi-line string to keep the formatting exactly like your README.
-    logic_display = """
-⚓ Project: Subsea Engineering (v2.2)
-==================================================
-The Logic: A ship is "Floating Hardware." 
-Small errors underwater = System Crash.
-==================================================
+class HullCleaningOperation:
+    """
+    Logic for underwater ship hull cleaning and maintenance.
+    A clean hull is fast; a dirty hull is 'Spaghetti Code'.
+    """
 
-🕹️ THE 6-STEP SYSTEM CHECK:
+    def __init__(self, ship_name):
+        self.ship_name = ship_name
+        self.safety_verified = False
+        self.cleaning_complete = False
 
-[00] CCTV        : The Scan. Cameras find damage before we start.
-[01] Brush Kart  : The Clean. Vacuum-stuck scrubber. Saves 20% fuel.
-[02] Scraper     : The Detail. Hand tool for rudders and seachests.
-[03] Polisher    : The Smooth. Mirror finish stops metal damage.
-[04] Gauges      : The Audit. Poker/Feeler gauges measure to 0.05mm.
-[05] Plugs       : The Patch. Swap sensors without sinking.
+    def pre_ops_safety_check(self):
+        """Step Zero: LOTO and Alpha Flag."""
+        print(f"--- PRE-OPS SAFETY CHECK: {self.ship_name} ---")
+        
+        # LOTO: Lock Out, Tag Out
+        loto_engaged = True 
+        print("[CHECK] LOTO: Engines and thrusters locked. Tagged 'DO NOT START'.")
+        
+        # Diver Flag: Alpha Flag
+        alpha_flag_hoisted = True
+        print("[CHECK] Alpha Flag: Hoisted. Nearby vessels signaled to stay clear.")
+        
+        if loto_engaged and alpha_flag_hoisted:
+            self.safety_verified = True
+            print("STATUS: Safety Code Verified. Diver is clear to enter the water.\n")
+        else:
+            raise Exception("SAFETY CRASH: Operation aborted. Safety protocols not met.")
 
---------------------------------------------------
-🛠️ THE "PLUGGING" PROCESS (HOT-SWAP):
+    def run_5_step_cleaning(self):
+        """The Performance System: 5 steps to save 20% fuel."""
+        if not self.safety_verified:
+            return "ERROR: Safety check required before cleaning."
 
-1. SEAL   : Diver puts a Plug over the hole from outside.
-2. KNOCK  : Diver knocks 1-2-3 to signal: "Safe to open!"
-3. UPDATE : Crew inside swaps the part.
-4. REBOOT : Balance pressure and remove the plug.
+        steps = [
+            ("01", "CCTV (Pre)", "Scanning for marine fouling and damage."),
+            ("02", "Brush Kart", "Engaging vacuum spinning scrubber kart to remove barnacles/slime."),
+            ("03", "Scraper", "Detailing rudders and seachests by hand."),
+            ("04", "Polisher", "Buffing propeller blades to a mirror finish."),
+            ("05", "CCTV (Post)", "Final audit. Verifying hull is smooth and bug-free.")
+        ]
 
---------------------------------------------------
-📜 SAFETY CODE:
+        print(f"--- STARTING 5-STEP CLEANING SYSTEM ---")
+        for step_id, tool, logic in steps:
+            print(f"[{step_id}] {tool}: {logic}")
+        
+        self.cleaning_complete = True
+        print("STATUS: Cleaning Complete. Performance restored.\n")
 
-* LOTO         : Lock engines. If they start, the diver is gone.
-* LINE TUGGING : Tug the rope if the radio breaks.
-* THE POKER    : Real numbers only. No guesses.
+    def perform_maintenance_audit(self, job_type="Gauges"):
+        """Extra Jobs: Hardware & Repair outside of cleaning."""
+        print(f"--- EXTRA JOB: {job_type} ---")
+        
+        if job_type == "Gauges":
+            print("[ACTION] Gap Check: Using tiny metal rulers to check for wear-down.")
+        
+        elif job_type == "Plugs" or job_type == "Cofferdam":
+            print(f"[ACTION] Fitting {job_type} to create a seal.")
+            print("[ACTION] Draining water to create dry workspace.")
+            # The Signal Logic
+            signal = "1-2-3"
+            print(f"[SIGNAL] Diver knocks '{signal}'. Safe to open internal valves.")
+            print(f"[REPAIR] Hot-swapping hardware while {self.ship_name} stays afloat.")
+        
+        print(f"STATUS: {job_type} job finished.\n")
 
---------------------------------------------------
-💡 CONCLUSION:
+def main():
+    # Initialize the "Floating Hardware"
+    vessel = HullCleaningOperation("MV_Wansaidon_Explorer")
 
-1. EXACT INPUTS : Use gauges. Precision is safety.
-2. CLEAN LOGIC  : A clean hull is fast. Dirty hull = "Spaghetti Code."
+    # 1. Safety First
+    vessel.pre_ops_safety_check()
 
-> SYSTEM CHECK: No "Undo" button in the ocean. Do it right first.
+    # 2. Performance Cleaning
+    vessel.run_5_step_cleaning()
 
---------------------------------------------------
-⚠️ DISCLAIMER:
-This document is for educational/research purposes. 
-Subsea operations are high-risk. Always follow 
-official Class Society rules and safety manuals.
+    # 3. Technical Maintenance (Optional Extra Jobs)
+    vessel.perform_maintenance_audit("Gauges")
+    vessel.perform_maintenance_audit("Plugs")
 
-✍️ CREDITS:
-* Research & Logic: [WANSAIDON]
-* Structure: Gemini AI
-==================================================
-"""
-    print(logic_display)
+    print("SYSTEM CHECK: No 'Undo' button in the ocean. All systems optimal.")
 
 if __name__ == "__main__":
-    run_subsea_script()
+    main()
